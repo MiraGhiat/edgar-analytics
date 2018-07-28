@@ -1,7 +1,7 @@
 
 # Challenge summary
 
-For this challenge, we take existing publicly available EDGAR weblogs and assume that each line represents a single web request for an EDGAR document that would be streamed into your program in real time. 
+For this challenge, we take an existing publicly available EDGAR weblogs and assume that each line represents a single web request for an EDGAR document that would be streamed into your program in real time. 
 
 Using the data, identify when a user visits, calculate the duration of and number of documents requested during that visit, and then write the output to a file.
 
