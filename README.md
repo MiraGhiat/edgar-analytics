@@ -1,7 +1,7 @@
 
 # Challenge summary
 
-For this challenge, we're asking you to take existing publicly available EDGAR weblogs and assume that each line represents a single web request for an EDGAR document that would be streamed into your program in real time. 
+For this challenge, we take existing publicly available EDGAR weblogs and assume that each line represents a single web request for an EDGAR document that would be streamed into your program in real time. 
 
 Using the data, identify when a user visits, calculate the duration of and number of documents requested during that visit, and then write the output to a file.
 
@@ -71,67 +71,4 @@ Once your program identifies the start and end of a session, it should gather th
 * date and time of the last webpage request in the session (yyyy-mm-dd hh:mm:ss)
 * duration of the session in seconds
 * count of webpage requests during the session
-
-
-
-    ├── README.md 
-    ├── run.sh
-    ├── src
-    │   └── sessionization.py
-    ├── input
-    │   └── inactivity_period.txt
-    │   └── log.csv
-    ├── output
-    |   └── sessionization.txt
-    ├── insight_testsuite
-        └── run_tests.sh
-        └── tests
-            └── test_1
-            |   ├── input
-            |   │   └── inactivity_period.txt
-            |   │   └── log.csv
-            |   |__ output
-            |   │   └── sessionization.txt
-            ├── your-own-test_1
-                ├── input
-                │   └── your-own-inputs
-                |── output
-                    └── sessionization.txt
-
-**Don't fork this repo** and don't use this `README` instead of your own. The content of `src` does not need to be a single file called `sessionization.py`, which is only an example. Instead, you should include your own source files and give them expressive names.
-
-## Testing your directory structure and output format
-
-To make sure that your code has the correct directory structure and the format of the output files are correct, we have included a test script called `run_tests.sh` in the `insight_testsuite` folder.
-
-The tests are stored simply as text files under the `insight_testsuite/tests` folder. Each test should have a separate folder with an `input` folder for `inactivity_period.txt` and `log.csv` and an `output` folder for `sessionization.txt`.
-
-You can run the test with the following command from within the `insight_testsuite` folder:
-
-    insight_testsuite~$ ./run_tests.sh 
-
-On a failed test, the output of `run_tests.sh` should look like:
-
-    [FAIL]: test_1
-    [Thu Mar 30 16:28:01 PDT 2017] 0 of 1 tests passed
-
-On success:
-
-    [PASS]: test_1
-    [Thu Mar 30 16:25:57 PDT 2017] 1 of 1 tests passed
-
-
-
-One test has been provided as a way to check your formatting and simulate how we will be running tests when you submit your solution. We urge you to write your own additional tests. `test_1` is only intended to alert you if the directory structure or the output for this test is incorrect.
-
-Your submission must pass at least the provided test in order to pass the coding challenge.
-
-## Instructions to submit your solution
-* To submit your entry please use the link you received in your coding challenge invite email
-* You will only be able to submit through the link one time 
-* Do NOT attach a file - we will not admit solutions which are attached files 
-* Use the submission box to enter the link to your GitHub repo or Bitbucket ONLY
-* Link to the specific repo for this project, not your general profile
-* Put any comments in the README inside your project repo, not in the submission box
-* We are unable to accept coding challenges that are emailed to us 
 
